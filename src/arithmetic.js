@@ -6,3 +6,11 @@ export const calculator = {
     return a - b;
   }
 };
+
+export const getPosts = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('Promise Resolved');
+    }, 3000);
+  });
+};
